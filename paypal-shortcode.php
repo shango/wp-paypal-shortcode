@@ -28,9 +28,10 @@ function paypal_buy_now_shortcode( $atts ) {
         );
         extract( $atts );
     
-        return 
-        '<h3>Pay Here Using PayPal.</h3>';
-        '<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        return
+        
+        '<h3>Pay Here Using PayPal.</h3>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                         <input type="image" src="' . plugins_url( 'images/paypal_btn.png', __FILE__ ) . '" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                         <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
                         <input type="hidden" name="add" value="1">
